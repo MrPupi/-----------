@@ -1,21 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyToDoList</title>
     <style>
-    .un::before {
-        content: url("unchecked_16.png");
-    }
+        .un::before {
+            content: url(icons22/unchecked_16.png);
+            padding-right: 15px;
+
+        }
+
+        .ch::before {
+            content: url(icons22/checked_16.png);
+            padding-right: 15px;
+
+        }
+
+        .un::after {
+            content: "❌";
+            padding-left: 10px;
+        }
+
+        .ch::after {
+            content: "❌";
+            padding-left: 10px;
+        }
+
+        dd {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-inline-start: 25px;
+            margin-inline-end: 25px;
+        }
+
+        body {
+            margin: 20px;
+            text-align: center;
+        }
+
+        div {
+            width: 35%;
+           
+        }
     </style>
 </head>
 
 <body>
-<dl>
-<span>My to Do List</span>   
-            <dd class="un">Hit the gim</dd>
-</dl>     
+    <div style="background-color:  #F5F5F5; display: inline-block;">
+
+        <span style=" display: block;" class="mtdl">My to Do List</span>
+        <dd class="un" style="background-color: #A5CCDA;">Hit the gim</dd>
+        <dd class="ch" style="background-color: #E2E2E2;">Pay bills</dd>
+        <dd class="un" style="background-color: #A5CCDA;">Meet Jonhy</dd>
+        <dd class="un" style="background-color: #ADD8E6;">Buy eggs</dd>
+        <dd class="ch" style="background-color: #E2E2E2;">Read a book</dd>
+        <dd class="un" style="background-color: #ADD8E6;">Organize office</dd>
+        <dd class="un" style="background-color: #A5CCDA;">Eat dinner</dd>
+        <dd class="un" style="background-color: #ADD8E6;">Buy apples</dd>
+        <dd class="un" style="background-color: #A5CCDA;">Meet George</dd>
+        <dd class="un" style="background-color: #ADD8E6;">Feed the cat</dd>
+        <dd class="ch" style="background-color: #E2E2E2;">Write a letter</dd>
+        <dd class="un" style="background-color: #ADD8E6;">Run 1 km</dd>
+
+
+
+    </div>
 </body>
 
 </html>
