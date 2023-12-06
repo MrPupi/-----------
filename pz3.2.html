@@ -18,11 +18,30 @@
         }
 
         aside {
-            background: greenyellow;
+            background: rgb(161, 172, 144);
             width: 300px;
             padding: 20px;
             border: 1px solid black
         }
+
+        .texttable {
+            color: rgb(17, 17, 134);
+        }
+
+        a:hover { 
+           text-decoration: underline solid;
+           color: brown;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(134, 17, 17);
+        }
+
+        body {
+            margin-inline-start: 15px;
+            margin-inline-end: 15px;
+        } 
     </style>
 
 
@@ -58,30 +77,30 @@
 
             <ol>
 
-                <li>History</li>
+                <li><span class="texttable"><a href="#his">History</a></span></li>
 
-                <li>Modern programming</li>
+                <li><span class="texttable"><a href="#mp">Modern programming</a></span></li>
 
                 <ol>
-                    <li>Quality requirements</li>
+                    <li><span class="texttable"><a href="#qr">Quality requirements</a></span></li>
 
-                    <li>Readability of source code</li>
+                    <li><span class="texttable"><a href="#rosc">Readability of source code</a></span></li>
 
-                    <li>Algorithmic complexity</li>
+                    <li><span class="texttable"><a href="#ac">Algorithmic complexity</a></span></li>
 
 
 
                     <ol>
 
-                        <li> Chess algorithms as an example</li>
+                        <li><span class="texttable"><a href="#caaae">Chess algorithms as an example</a></span></li>
 
                     </ol>
 
                 </ol>
 
-                <li>Programming languages</li>
+                <li><span class="texttable"><a href="#pl">Programming languages</a></span></li>
 
-                <li>Programmers</li>
+                <li><span class="texttable"><a href="#prog">Programmers</a></span></li>
 
             </ol>
 
@@ -91,7 +110,7 @@
 
 
 
-    <h2>History</h2>
+    <h2 id="his">History</h2>
 
     <hr>
 
@@ -133,11 +152,11 @@
 
     </p>
 
-    <h2>Modern programming</h2>
+    <h2 id="mp">Modern programming</h2>
 
     <hr>
 
-    <h3>Quality requirements</h3>
+    <h3 id="qr">Quality requirements</h3>
 
     <ul>
 
@@ -192,7 +211,7 @@
     </ul>
 
 
-    <h3>Readability of source code</h3>
+    <h3 id="rosc">Readability of source code</h3>
 
    <p> In computer programming, readability refers to the ease with which a human reader can comprehend the purpose,
     control flow, and operation of source code. It affects the aspects of quality above, including portability,
@@ -203,7 +222,7 @@
         inefficiencies, and duplicated code. A study[25] found that a few simple readability transformations made code
         shorter and drastically reduced the time to understand it.</p>
 
-    <h3>Algorithmic complexity</h3>
+    <h3 id="ac">Algorithmic complexity</h3>
 
     The academic field and the engineering practice of computer programming are both largely concerned with discovering
     and implementing the most efficient algorithms for a given class of problem. For this purpose, algorithms are
@@ -212,13 +231,13 @@
     well-established algorithms and their respective complexities and use this knowledge to choose algorithms that are
     best suited to the circumstances.
 
-   <h3> Chess algorithms as an example</h3>
+   <h3 id="caaae"> Chess algorithms as an example</h3>
 
     "Programming a Computer for Playing Chess" was a 1950 paper that evaluated a "minimax" algorithm that is part of the
     history of algorithmic complexity; a course on IBM's Deep Blue (chess computer) is part of the computer science
     curriculum at Stanford University.[27]
 
-    <h2>Programming languages</h2>
+    <h2 id="pl">Programming languages</h2>
 
     <hr>
 
@@ -231,7 +250,7 @@
     typically more machine-oriented and faster to execute, whereas "high-level" languages are more abstract and easier
     to use but execute less quickly. It is usually easier to code in "high-level" languages than in "low-level" ones.
 
-    <h2>Programmers</h2>
+    <h2 id="prog">Programmers</h2>
 
     <hr>
 
