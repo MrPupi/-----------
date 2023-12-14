@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>o'clock</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: brown;
+
+        }
+
+        button {
+            margin: 15px;
+        }
+
+        @keyframes time {
+            from {
+                transform: rotate(0);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .clock div {
+            position: absolute;
+        }
+
+        .clock {
+            border: 3px black solid;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .center {
+            height: 5px;
+            width: 5px;
+            background-color: black;
+            top: calc(50% - (5px/2));
+            left: calc(50% - (5px/2));
+            border-radius: 50%;
+        }
+
+        .sec {
+            height: 80px;
+            width: 3px;
+            background-color: brown;
+            transform-origin: bottom center;
+            left: calc(50% - (3px/2));
+            top: 20px;
+            border-radius: 3px;
+            animation: time 60s steps(60) infinite;
+        }
+
+        .min {
+            height: 60px;
+            width: 3px;
+            background-color: rgb(118, 29, 29);
+            transform-origin: bottom center;
+            left: calc(50% - (3px/2));
+            top: 40px;
+            border-radius: 3px;
+            animation: time 3600s linear infinite;
+        }
+
+        .ho {
+            height: 40px;
+            width: 3px;
+            background-color: rgb(73, 21, 21);
+            transform-origin: bottom center;
+            left: calc(50% - (3px/2));
+            top: 60px;
+            border-radius: 3px;
+            animation: time 86400s linear infinite;
+        }
+
+        
+
+       
+
+    </style>
+
+</head>
+
+<body>
+
+    <button><a href="dz4.1.html">Next</a></button>
+
+    <div class="clock">
+        <div class="sec"></div>
+        <div class="min"></div>
+        <div class="ho"></div>
+        <div class="center"></div>
+    </div>
+
+    <button><a href="index.html">Back</a></button>
+    
+</body>
+
+</html>
