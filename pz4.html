@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reloud</title>
+    <title>Reloud Tab</title>
     <style>
         a {
             text-decoration: none;
@@ -14,6 +14,42 @@
         button {
             margin: 15px;
         }
+
+        .flexation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .un {
+
+            height: 50px;
+            width: 500px;
+            border: 5px orangered solid;
+            position: relative;
+
+        }
+
+        .in {
+            height: 50px;
+            width: 50px;
+            background-color: orange;
+            animation: dvishenie 5s linear alternate infinite;
+            position: absolute;
+        }
+
+        @keyframes dvishenie {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 450px;
+            }
+        }
+
+
     </style>
 </head>
 
@@ -21,7 +57,19 @@
 
     <button><a href="pz4.1.html">Next</a></button>
 
+    <div class="flexation">
+
+        <div class="un">
+
+            <div class="in">
     
+    
+    
+            </div>
+
+        </div>
+        
+    </div>
 
     <button><a href="index.html">Back</a></button>
     
