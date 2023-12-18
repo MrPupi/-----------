@@ -20,7 +20,7 @@
       filter: grayscale(1);
       scale: 4;
       transition: 1s;
-      /*animation: bit 1s infinite;*/ 
+      animation: bit 2s infinite; 
     }
 
     img:hover {
@@ -31,14 +31,26 @@
     }
 
     @keyframes bit {
-      from {
-        scale: 4;
+      /* 0% {
+        scale: 2;
         filter: grayscale(1);
+      } */
+      0% {
+        scale: 4;
+        filter: grayscale(0.5);
       }
-      to {
+      50% {
         scale: 6;
         filter: grayscale(0);
       }
+      100% {
+        scale: 4;
+        filter: grayscale(0.5);
+      }
+      /* 100% {
+        scale: 2;
+        filter: grayscale(1);
+      } */
 
       /* from {
         scale: 6;
@@ -50,16 +62,30 @@
         filter: grayscale(1);
       } */
     }
+
+        a {
+            text-decoration: none;
+            color: brown;
+
+        }
+
+        button {
+            margin: 15px;
+        }
      
   </style>
 </head>
 <body>
+
+  <button><a href="pz4.3.html">Next</a></button>
 
   <div class="flexation">
 
     <img src="iconsFace.Inst.Tube/favorites_(1)-transformed.png" alt="">
 
   </div>
+
+  <button><a href="index.html">Back</a></button>
 
 </body>
 </html>
