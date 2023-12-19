@@ -20,15 +20,42 @@
 
         table, tr, th, td {
             border: 2px solid black;
+            padding: 10px;
         }
 
         .bor {
             border: 2px solid black;
-            background-color: aquamarine;
         }
 
         table {
             border-collapse: collapse;
+            font-family:  'Arial Narrow', Arial, sans-serif;
+            margin: 50px auto;
+        }
+
+        #c {
+           background-color: rgb(110, 110, 173); 
+           
+        }
+
+        #s {
+            background-color: rgb(103, 103, 199);
+        }
+
+        #e {
+            background-color: rgb(69, 69, 208);
+        }
+
+        #t {
+            background-color: rgb(44, 44, 225);
+        }
+
+        #p {
+            background-color: blue;
+        }
+
+        .ber {
+            color: aliceblue;
         }
 
 
@@ -42,12 +69,12 @@
 
     <thead>
 
-        <tr class="bor">
-            <th>Choose your plan</th>
-            <th>starter<br><br>$10<br>per month</th>
-            <th>econom<br><br>$30<br>per month</th>
-            <th>standart<br><br>$59<br>per month</th>
-            <th>professional<br><br>$99<br>per month</th>
+        <tr class="ber">
+            <th id="c">Choose your plan</th>
+            <th id="s">starter<br><br>$10<br>per month</th>
+            <th id="e">econom<br><br>$30<br>per month</th>
+            <th id="t">standart<br><br>$59<br>per month</th>
+            <th id="p">professional<br><br>$99<br>per month</th>
         </tr>
 
     </thead>
@@ -55,27 +82,27 @@
     <tbody>
 
         <tr class="bor">
-            <td>Amount of space</td>
-            <td>20GB</td>
-            <td>40GB</td>
-            <td>110GB</td>
-            <td>Umlimited</td>
+            <td class="grey">Amount of space</td>
+            <td class="lgrey">20GB</td>
+            <td class="grey">40GB</td>
+            <td class="lgrey">110GB</td>
+            <td class="grey">Umlimited</td>
         </tr>
 
         <tr class="bor">
-            <td>Bandwidth per month</td>
-            <td>120GB</td>
-            <td>240GB</td>
-            <td>610GB</td>
-            <td>1300GB</td>
+            <td class="lgrey">Bandwidth per month</td>
+            <td class="lig">120GB</td>
+            <td class="lgrey">240GB</td>
+            <td class="lig">610GB</td>
+            <td class="lgrey">1300GB</td>
         </tr>
 
         <tr class="bor">
-            <td>Email accounts</td>
-            <td>1</td>
-            <td>15</td>
-            <td>60</td>
-            <td>Unlimited</td>
+            <td class="grey">Email accounts</td>
+            <td class="lgrey">1</td>
+            <td class="grey">15</td>
+            <td class="lgrey">60</td>
+            <td class="grey">Unlimited</td>
         </tr>
 
         <tr class="bor">
