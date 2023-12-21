@@ -6,8 +6,9 @@
     <title>Table</title>
     <style>
 
-        button {
+        .butt {
             text-transform: uppercase;
+            padding: 15px 25px;
         }
          
         tfoot {
@@ -19,12 +20,12 @@
         }
 
         table, tr, th, td {
-            border: 2px solid black;
+            border: 0px solid black;
             padding: 10px;
         }
 
         .bor {
-            border: 2px solid black;
+            border: 0px solid black;
         }
 
         table {
@@ -32,8 +33,7 @@
             font-family:  'Arial Narrow', Arial, sans-serif;
             margin: 50px auto;
             width: 1000px;
-            border: 0px solid black;
-            border-radius: 15px;
+            
         }
 
         #c {
@@ -59,18 +59,49 @@
 
         .ber {
             color: aliceblue;
+            font-size: 26px;
         }
 
         .grey {
-            background-color: rgb(201, 201, 201);
+            background-color:#dbdbdb;
         }
 
         .lgrey {
-            background-color: rgb(209, 225, 241);
+            background-color: #e7e7e7;
         }
 
         .lig {
-            background-color: rgb(205, 205, 205);
+            background-color: #f3f3f3;
+        }
+
+        .gtd {
+            padding: 30px;
+            background-color: #dbdbdb;
+        }
+
+        .ltd {
+            padding: 30px;
+            background-color: #e7e7e7;
+        }
+
+        .g {
+            background-color: #dbdbdb;
+            text-align: left;
+        }
+
+        .l {
+            background-color: #e7e7e7;
+            text-align: left;
+        }
+
+        a {
+            text-decoration: none;
+            color: brown;
+
+        }
+
+        button {
+            margin: 15px;
         }
 
 
@@ -79,6 +110,8 @@
 </head>
 
 <body>
+
+    <button><a href="pz4.1.html">Next</a></button>
 
    <table class="all">
 
@@ -97,7 +130,7 @@
     <tbody>
 
         <tr class="bor">
-            <td class="grey">Amount of space</td>
+            <td class="g">Amount of space</td>
             <td class="lgrey">20GB</td>
             <td class="grey">40GB</td>
             <td class="lgrey">110GB</td>
@@ -105,7 +138,7 @@
         </tr>
 
         <tr class="bor">
-            <td class="lgrey">Bandwidth per month</td>
+            <td class="l">Bandwidth per month</td>
             <td class="lig">120GB</td>
             <td class="lgrey">240GB</td>
             <td class="lig">610GB</td>
@@ -113,7 +146,7 @@
         </tr>
 
         <tr class="bor">
-            <td class="grey">Email accounts</td>
+            <td class="g">Email accounts</td>
             <td class="lgrey">1</td>
             <td class="grey">15</td>
             <td class="lgrey">60</td>
@@ -121,7 +154,7 @@
         </tr>
 
         <tr class="bor">
-            <td class="lgrey">MySQl databases</td>
+            <td class="l">MySQl databases</td>
             <td class="lig">1</td>
             <td class="lgrey">15</td>
             <td class="lig">60</td>
@@ -129,7 +162,7 @@
         </tr>
 
         <tr class="bor">
-            <td class="grey">25h support</td>
+            <td class="g">25h support</td>
             <td class="lgrey">No</td>
             <td class="grey">Yes</td>
             <td class="lgrey">Yes</td>
@@ -137,7 +170,7 @@
         </tr>
 
         <tr class="bor">
-            <td class="lgrey">Support tickets per month</td>
+            <td class="l">Support tickets per month</td>
             <td class="lig">2</td>
             <td class="lgrey">6</td>
             <td class="lig">14</td>
@@ -145,17 +178,19 @@
         </tr>
 
         <tfoot class="bor">
-            <td class="grey"></td>
-            <td class="lgrey"><button>start</button></td>
-            <td class="grey"><button>start</button></td>
-            <td class="lgrey"><button>start</button></td>
-            <td class="grey"><button>start</button></td>
+            <td class="gtd"></td>
+            <td class="ltd"><button class="butt">start</button></td>
+            <td class="gtd"><button class="butt">start</button></td>
+            <td class="ltd"><button class="butt">start</button></td>
+            <td class="gtd"><button class="butt">start</button></td>
             
         </tfoot>
 
     </tbody>
 
    </table>
+
+   <button><a href="index.html">Back</a></button>
   
 </body>
 
