@@ -1,13 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruchki&Tetradki</title>
+  <meta charset="UTF-8">
+  <title>Ruchki&Tetradki</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: bisque;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+    }
+
+    .icon {
+      position: absolute;
+      bottom: -100px;
+      opacity: 0;
+      transition: bottom 2s ease, opacity 2s ease;
+    }
+
+    .icon:nth-child(1) {
+      transition-delay: 0.5s;
+      transform: rotate(-30deg) scale(1);
+
+    }
+
+    .icon:nth-child(2) {
+      transition-delay: 1s;
+      transform: rotate(-10deg) scale(1.5);
+
+    }
+
+    .icon:nth-child(3) {
+      transition-delay: 1.5s;
+      transform: rotate(15deg) scale(1.5);
+    }
+
+    .icon:nth-child(4) {
+      transition-delay: 2.0s;
+      transform: rotate(30deg) scale(1);
+    }
+
+    .icon:nth-child(5) {
+      transition-delay: 2.5s;
+      transform: rotate(90deg);
+    }
+
+    .icon img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .show {
+      bottom: 0;
+      opacity: 1;
+    }
+
+    @keyframes showIcons {
+      from {
+        opacity: 0;
+        bottom: 200px;
+        left: 45%;
+      }
+ 
+    }
+
+    .icon:nth-child(1) {
+      animation: showIcons 2s ease 0.5s both;
+      opacity: 1;
+      bottom: 50%;
+      left: 15%;
+    }
+
+    .icon:nth-child(2) {
+      animation: showIcons 2s ease 1s both;
+      opacity: 1;
+      bottom: 56%;
+      left: 30%;
+    }
+
+    .icon:nth-child(3) {
+      animation: showIcons 2s ease 1.5s both;
+      opacity: 1;
+      bottom: 56%;
+      left: 50%;
+    }
+
+    .icon:nth-child(4) {
+      animation: showIcons 2s ease 2.0s both;
+      opacity: 1;
+      bottom: 50%;
+      left: 65%;
+    }
+
+    .icon:nth-child(5) {
+      animation: showIcons 2s ease 2.5s both;
+      opacity: 1;
+      bottom: 40%;
+      left: 40%;
+    }
+  </style>
 </head>
 
 <body>
-    
+  <div class="container">
+    <div class="icon">
+      <img src="icons/calc.png" alt="Icon 1">
+    </div>
+    <div class="icon">
+      <img src="icons/book.png" alt="Icon 2">
+    </div>
+    <div class="icon">
+      <img src="icons/pallete.png" alt="Icon 3">
+    </div>
+    <div class="icon">
+      <img src="icons/paper.png" alt="Icon 4">
+    </div>
+    <div class="icon">
+      <img src="icons/pencil.png" alt="Icon 5">
+    </div>
+  </div>
 </body>
 
 </html>
