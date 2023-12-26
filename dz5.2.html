@@ -17,80 +17,133 @@
             margin: 15px;
         }
 
-    .menu {
-      text-transform: uppercase;
-      color: antiquewhite;
-      padding-top: 25px;
-      padding-left: 10px;
-      position: absolute;
+    ol {
+      list-style-type: none;
     }
 
+    
     .e {
       text-transform: uppercase;
       color: antiquewhite;
-      padding-top: 65px;
-      position: absolute;
-      padding-left: 10px;
     }
-
+    
     .f {
       text-transform: uppercase;
       color: antiquewhite;
-      padding-top: 110px;
-      position: absolute;
-      padding-left: 10px;
     }
 
     .h {
       text-transform: uppercase;
       color: antiquewhite;
-      padding-left: 10px;
-      padding-top: 165px;
-      position: absolute;
     }
 
     .sec {
       text-transform: uppercase;
       color: antiquewhite;
-      padding-left: 10px;
-      padding-top: 220px;
-      position: absolute;
     }
-
+    
     .set {
       text-transform: uppercase;
       color: antiquewhite;
-      padding-left: 10px;
-      padding-top: 275px;
-      position: absolute;
     }
-
+    
     .mainmenu {
-      height: auto;
-      width: 100px;
+      height: 100%;
+      width: 60px;
       background-color: grey;
       left: 0px;
       top: 0px;
       bottom: 0px;
       position: fixed;
+      transition: 1s;
+      margin: 0;
+      padding: 0;
+      font-size: bold;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .mainmenu img {
+      height: 60px;
+    }
+    
+    #p1 {
+      top: 42px;
+      
     }
 
-    
+    #p2 {
+      top: 89px;
+      
+    }
 
-  </style>
+    #p3 {
+      top: 144px;
+     
+    }
+    
+    #p4 {
+      top: 200px;
+      
+    }
+    
+    #p5 {
+      top: 254px;
+      
+    }
+    
+    .mainmenu .e, .f, .h, .sec, .set {
+      opacity: 0;
+      transition: 1s;
+    }
+    .mainmenu:hover li {
+      opacity: 1;
+      transition: 1s;
+    }
+
+    .mainmenu:hover  {
+      width: 200px;
+      opacity: 1;
+    }
+
+    .mainmenu:hover .menu {
+     left: 75px;
+    }
+
+    .menu {
+      text-transform: uppercase;
+      color: antiquewhite;
+      opacity: 1;
+      transition: 1s;
+    }
+
+    li:hover {
+      background-color: dimgrey;
+      transition: 1s;
+    }
+    
+    </style>
 
 </head>
 
 <body>
 
-  <div class="mainmenu">
+  <ol class="mainmenu">
 
-  <span class="menu">menu</span> 
-  <span class="e">edit</span> 
-  <span class="f">favorites</span> 
-  <span class="h">history</span> 
-  <span class="sec">security</span> 
-  <span class="set">settings</span> 
+  <li class="menu">menu</li> 
+
+  <li>
+    <a><img src="icons22/edit.png" alt="" id="p1"><span class="e">edit</span></a>
+  </li> 
+  <img src="icons22/favorites (1).png" alt="" id="p2"><li class="f">favorites</li> 
+  <img src="icons22/history.png" alt="" id="p3"><li class="h">history</li> 
+  <img src="icons22/security.png" alt="" id="p4"><li class="sec">security</li> 
+  <img src="icons22/settings.png" alt="" id="p5"><li class="set">settings</li> 
+
+  </ol>
+
+  <div>
+
+    
 
   </div>
   
