@@ -4,8 +4,153 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>category</title>
+
+  <style>
+
+    .hcac {
+
+      text-transform: capitalize;
+      color: bisque;
+      background-color: rgb(63, 93, 94);
+      border-radius: 0;
+      padding: 0;
+      display: flex;
+      list-style-type: none;
+      justify-content: space-evenly;
+      min-width: 281px;
+      max-width: 281px;
+      gap: 0px;
+      font-size: larger;
+      margin: auto 350px;
+      transition: 1s;
+
+    }
+
+    li {
+      padding: 1px;
+      border: 1px rgb(43, 61, 61) solid;
+      transition: 1s;
+    }
+
+    li:hover {
+      background-color:  rgb(43, 61, 61);
+      transition: 1s;
+    }
+
+    .categore {
+      position: relative;
+      list-style-type: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: bisque;
+      padding: 5px;
+    }
+
+    .dop:hover .hid {
+      
+      display: block;
+
+    }
+
+    .hid:hover {
+      display: block;
+    }
+
+    .hid {
+
+      position: absolute;
+      list-style-type: none;
+      display: none;
+      width: 80px;
+      padding-left: 6px;
+      top: 100%;
+      padding: 1px;
+      border: 1px rgb(43, 61, 61) solid;
+      background-color: rgb(63, 93, 94);
+      text-transform: capitalize;
+
+    }
+
+    .dap:hover .hop {
+
+      display: block;
+
+    }
+
+    .hop:hover {
+
+      display: block;
+
+    }
+  
+
+    .hop {
+      position: absolute;
+      list-style-type: none;
+      display: none;
+      width: 80px;
+      top: 25px;
+      left: 100%;
+      padding: 1px;
+      border: 1px rgb(43, 61, 61) solid;
+      background-color: rgb(63, 93, 94);
+      text-transform: capitalize;
+    }
+
+  </style>
+
 </head>
+
 <body>
+
+<div class="categore">
+
+  <ul class="hcac">
+
+    <li>
+      <a href="#">Home</a>
+    </li>
+
+    <li class="dop">
+      <a href="#" >Category</a>
+
+      <ul class="hid">
+
+        <li><a href="#">man</a></li>
+
+        <li class="dap">
+          <a href="#">women</a>
+
+          <ul class="hop">
+
+            <li><a href="#">dress</a></li>
+            <li><a href="#">pants</a></li>
+            <li><a href="#">shoes</a></li>
+
+          </ul>
+
+        </li>
+
+        <li><a href="#">kids</a></li>
+
+      </ul>
+
+    </li>
+
+    <li>
+      <a href="#">About</a>
+    </li>
+
+    <li>
+      <a href="#">Contact</a>
+    </li>
+
+  </ul>
+
+</div>
   
 </body>
+
 </html>
