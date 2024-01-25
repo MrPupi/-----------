@@ -11,8 +11,9 @@
 
       text-transform: capitalize;
       color: aliceblue;
-      font-size: 25px;
+      font-size: 28px;
       font-weight: 900;
+     
       
     }
 
@@ -48,6 +49,25 @@
       opacity: 0.4;
     }
 
+    #ha {
+      opacity: 0.4;
+    }
+
+   @media (max-width: 777px) {
+    #mamf {
+      flex-direction: column;
+      gap: 0px;
+
+    }
+  }
+            
+    @media (max-width: 500px) {
+      #papf, #mamf {
+        flex-direction: column;
+        gap: 0px;
+      }
+    }
+
    
   </style>
 
@@ -61,7 +81,7 @@
 
     <div class="text">
 
-      <p> Home / Articles /</p>
+      <p id="ha"> Home / Articles /</p>
   
       <div>
   
@@ -72,9 +92,9 @@
   
         </span>
 
-        <div style="display: flex;">
+        <div id="papf" style="display: flex;">
 
-          <img style="height: 120px; padding: 25px;" src="iconsFace.Inst.Tube/account.png" alt="human">
+          <img style="height: 120px; width: 120; padding: 25px;" src="iconsFace.Inst.Tube/account.png" alt="human">
 
          <div id="mamf" style="display: flex; gap: 30px">
 
